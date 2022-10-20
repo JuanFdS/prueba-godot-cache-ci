@@ -38,4 +38,6 @@ jobs:
           cd $GITHUB_WORKSPACE/godot-project
           godot -e --export-pack lightweight ./assets/icon.png
           godot -e --export-pack lightweight ./assets/icon.png
+          echo "Contents of .import: "
+          ls $GITHUB_WORKSPACE/godot-project/.import
 
