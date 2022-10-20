@@ -28,7 +28,7 @@ jobs:
       - name: Cache .import
         uses: actions/cache@v3.0.11
         with:
-          path: $GITHUB_WORKSPACE/godot-project/.import
+          path: ${{ github.workspace }}/godot-project/.import
           key: ${{ runner.os }}-godot-import-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-godot-import-
